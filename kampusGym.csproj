@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0865EED7-2D9B-40B2-9D6C-17520D09B70D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kampusGym</RootNamespace>
+    <AssemblyName>kampusGym</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses3.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="kampusgymDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kampusgymDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\BP.cs" />
+    <Compile Include="Klase\BP_Invertar.cs" />
+    <Compile Include="Klase\BP_Login.cs" />
+    <Compile Include="Klase\BP_Raspored.cs" />
+    <Compile Include="Klase\dodajKlasa.cs" />
+    <Compile Include="Klase\invertarKlasa.cs" />
+    <Compile Include="Klase\loginKlasa.cs" />
+    <Compile Include="Klase\rasporedKlasa.cs" />
+    <Compile Include="UI\chartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\chartForm.Designer.cs">
+      <DependentUpon>chartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\dodajForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\dodajForm.Designer.cs">
+      <DependentUpon>dodajForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\invertarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\invertarForm.Designer.cs">
+      <DependentUpon>invertarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\kampusGym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\kampusGym.Designer.cs">
+      <DependentUpon>kampusGym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\obnoviForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\obnoviForm.Designer.cs">
+      <DependentUpon>obnoviForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\obnoviForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\obnoviForm2.Designer.cs">
+      <DependentUpon>obnoviForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\rasporedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\rasporedForm.Designer.cs">
+      <DependentUpon>rasporedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\urediForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\urediForm.Designer.cs">
+      <DependentUpon>urediForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\urediForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\urediForm2.Designer.cs">
+      <DependentUpon>urediForm2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\chartForm.resx">
+      <DependentUpon>chartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\dodajForm.resx">
+      <DependentUpon>dodajForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\invertarForm.resx">
+      <DependentUpon>invertarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\kampusGym.resx">
+      <DependentUpon>kampusGym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\obnoviForm.resx">
+      <DependentUpon>obnoviForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\obnoviForm2.resx">
+      <DependentUpon>obnoviForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\rasporedForm.resx">
+      <DependentUpon>rasporedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\urediForm.resx">
+      <DependentUpon>urediForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\urediForm2.resx">
+      <DependentUpon>urediForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses2.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses2.dbml.layout">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses3.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses3.dbml.layout">
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </None>
+    <None Include="kampusgymDataSet.xsc">
+      <DependentUpon>kampusgymDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kampusgymDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kampusgymDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kampusgymDataSet.xss">
+      <DependentUpon>kampusgymDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pictures\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
